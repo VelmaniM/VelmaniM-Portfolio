@@ -6,7 +6,7 @@
 }
 
 .about-title {
-  font-size: clamp(1.25rem,2.4vw,1.875rem);
+  font-size: clamp(1rem, 4vw, 1.6rem);
   font-weight: 900;
   background: linear-gradient(90deg,#7b2ff7,#f107a3);
   -webkit-background-clip: text;
@@ -62,7 +62,7 @@
 }
 
 .about-card h3 {
-  font-size: 0.8125rem;
+  font-size: clamp(0.7rem, 2.2vw, 0.9rem);
   font-weight: 900;
   color: #4b0082;
   text-transform: uppercase;
@@ -71,9 +71,9 @@
 }
 
 .about-card p, .about-card li {
-  font-size: clamp(0.72rem,1.1vw,0.84rem);
+  font-size: clamp(0.65rem, 2.5vw, 0.85rem);
   color: #555;
-  line-height: 1.65;
+  line-height: 1.5;
   font-weight: 600;
 }
 
@@ -98,42 +98,4 @@
 @keyframes fadeLeft {
   from { opacity:0; transform:translateX(-1.125rem); }
   to   { opacity:1; transform:translateX(0); }
-}
-
-@media (max-width: 768px) {
-  .about-body { flex-direction: column; overflow-y: auto; }
-  .about-card ul { columns: 1; }
-
-  .about-title {
-    font-size: 1.125rem;
-  }
-
-  .about-card h3 {
-    font-size: 0.75rem;
-  }
-
-  .about-card p,
-  .about-card li {
-    font-size: 0.6875rem;
-    line-height: 1.5;
-  }
-}
-@media (max-width: 480px) {
-  .about-card {
-    padding: 0.5rem 0.75rem;
-  }
-
-  .about-title {
-    font-size: 1rem;
-  }
-
-  .about-card h3 {
-    font-size: 0.6875rem;
-  }
-
-  .about-card p,
-  .about-card li {
-    font-size: 0.625rem;
-    line-height: 1.4;
-  }
 }
