@@ -73,7 +73,7 @@ nav {
   transition: background 0.22s, color 0.22s, transform 0.18s;
 }
 .link li a:hover     { background: var(--glass); transform: translateY(-1px); }
-.link li a.active    { background: var(--grad); color:#fff; -webkit-text-fill-color:#fff; }
+
 
 
 .menu-toggle {
