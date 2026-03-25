@@ -72,7 +72,6 @@ nav {
   border-radius: 30px;
   transition: background 0.22s, color 0.22s, transform 0.18s;
 }
-.link li a:hover     { background: var(--glass); transform: translateY(-1px); }
 
 
 
