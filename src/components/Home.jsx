@@ -7,7 +7,7 @@ function Home() {
         <div className="left-content">
           <h1>I am Velmani M</h1>
           <h4>Full-Stack Developer &nbsp;·&nbsp; UI &amp; UX Designer &nbsp;·&nbsp; Software Developer</h4>
-          <a href="VelmaniCV.pdf" download>
+          <a href="Velmani_M_CV.pdf" download>
             <button className="custom-button">Download CV</button>
           </a>
           <div className="social-icons">
