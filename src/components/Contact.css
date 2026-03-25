@@ -153,13 +153,30 @@
 
 @media (max-width: 768px) {
   .contact-body   { flex-direction:column; overflow-y:auto; }
-  .c-info         { width:100%; flex-direction:row; flex-wrap:wrap; gap:12px; padding:16px; justify-content:flex-start; }
-  .c-info-title   { width:100%; }
-  .c-info-item    { min-width:140px; }
+  .c-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    align-items: start;
+  }
+  .c-info-title {
+    grid-column: 1 / -1;
+  }
+  .c-info-item {
+    min-width: 0;
+  }
   .c-divider      { display:none; }
   .form-row       { grid-template-columns:1fr; }
 }
 
 @media (max-width: 480px) {
-  .c-form-wrap { padding:14px 14px; }
+  .c-form-wrap {
+    padding: 0.875rem;
+  }
+
+  .c-info {
+    grid-template-columns: 1fr;
+  }
 }
